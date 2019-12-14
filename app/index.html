@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- The first thing in any HTML file should be the charset -->
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- Make the page mobile compatible -->
+    <!--
+      viewport-fit=cover is set in order to handle iOS X layout with new CSS rules
+      scales properties (initial-scale=1, maximum-scale=1, user-scalable=0) are set in order to avoid zoom in zoom out on iOS when clicking on input or switching to landscape mode
+    -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=contain">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PapaGère">
+
+    <meta name="Description" content="PapaGère Progressive Web App !">
+
+    <!-- iOS splash screens -->
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-640x1136.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    >
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-750x1294.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      >
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-1242x2148.png"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    >
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-1125x2436.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    >
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-1536x2048.png"
+      media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+    >
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-1668x2224.png"
+      media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+    >
+    <link
+      rel="apple-touch-startup-image"
+      href="/ios-splash-screens/launch-2048x2732.png"
+      media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+    >
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <title>Papagere</title>
+  </head>
+  <body ontouchstart="">
+    <!-- Display a message if JS has been disabled on the browser. -->
+    <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
+
+    <!-- The app hooks into this div -->
+    <div id="app"></div>
+
+    <!-- Open Sans Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="preload">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="preload">
+
+    <script src="/static/nobounce.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out the webpack config files in config/webpack for details) -->
+  </body>
+</html>

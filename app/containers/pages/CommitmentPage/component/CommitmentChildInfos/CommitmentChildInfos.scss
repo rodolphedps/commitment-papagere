@@ -1,0 +1,66 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+
+.add-child-page {
+    padding-top: calc-rem(75);
+    padding-left: 2%;
+}
+
+.title-card {
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.list-infos {
+    margin-right: 5%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.name {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.name-input {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.birth {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.birth-input {
+    margin-top: 2%;
+    margin-left: 5%;
+    color: $blue,
+}
+
+.line {
+    width: 90%;
+    height: 47px;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    margin-left: 5%;
+}
+
+.is-child-born {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 4%;
+}
+
+.action-bar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}

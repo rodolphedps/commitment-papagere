@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "papagere-icons";
+  src: url("../fonts/papagere-icons.eot?5f788571cbb6e651834f8c241839aff5?#iefix") format("embedded-opentype"),
+  url("../fonts/papagere-icons.woff2?5f788571cbb6e651834f8c241839aff5") format("woff2"),
+  url("../fonts/papagere-icons.woff?5f788571cbb6e651834f8c241839aff5") format("woff"),
+  url("../fonts/papagere-icons.ttf?5f788571cbb6e651834f8c241839aff5") format("truetype"),
+  url("../fonts/papagere-icons.svg?5f788571cbb6e651834f8c241839aff5#papagere-icons") format("svg");
+}
+
+.icon {
+
+}
+
+.icon:before {
+  font-family: papagere-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: top;
+}
+
+.icon-activite:before {
+  content: "\f101";
+}
+.icon-biberon:before {
+  content: "\f102";
+}
+.icon-brunch:before {
+  content: "\f103";
+}
+.icon-burger-menu:before {
+  content: "\f104";
+}
+.icon-camera:before {
+  content: "\f105";
+}
+.icon-car:before {
+  content: "\f106";
+}
+.icon-check:before {
+  content: "\f107";
+}
+.icon-contacts:before {
+  content: "\f108";
+}
+.icon-contracts:before {
+  content: "\f109";
+}
+.icon-crisp:before {
+  content: "\f10a";
+}
+.icon-cross:before {
+  content: "\f10b";
+}
+.icon-dinner:before {
+  content: "\f10c";
+}
+.icon-document:before {
+  content: "\f10d";
+}
+.icon-dropdown-arrow-down:before {
+  content: "\f10e";
+}
+.icon-dropdown-arrow-right:before {
+  content: "\f10f";
+}
+.icon-email:before {
+  content: "\f110";
+}
+.icon-eye:before {
+  content: "\f111";
+}
+.icon-holiday:before {
+  content: "\f112";
+}
+.icon-info:before {
+  content: "\f113";
+}
+.icon-left-arrow:before {
+  content: "\f114";
+}
+.icon-logout:before {
+  content: "\f115";
+}
+.icon-lunch:before {
+  content: "\f116";
+}
+.icon-papagere:before {
+  content: "\f117";
+}
+.icon-people:before {
+  content: "\f118";
+}
+.icon-person:before {
+  content: "\f119";
+}
+.icon-phone:before {
+  content: "\f11a";
+}
+.icon-pin:before {
+  content: "\f11b";
+}
+.icon-planning:before {
+  content: "\f11c";
+}
+.icon-plus:before {
+  content: "\f11d";
+}
+.icon-remove:before {
+  content: "\f11e";
+}
+.icon-right-arrow:before {
+  content: "\f11f";
+}
+.icon-search:before {
+  content: "\f120";
+}
+.icon-sms:before {
+  content: "\f121";
+}
+.icon-ss:before {
+  content: "\f122";
+}
+.icon-wage:before {
+  content: "\f123";
+}

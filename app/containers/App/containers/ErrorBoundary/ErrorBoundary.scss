@@ -1,0 +1,19 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.global-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: $white;
+  height: 100%;
+
+  &__message {
+    text-align: center;
+  }
+  &__button {
+
+  }
+}

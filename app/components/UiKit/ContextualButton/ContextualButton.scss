@@ -1,0 +1,95 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/font-family.scss';
+@import '../../../styles/functions.scss';
+
+.contextual-button {
+  position: fixed;
+  bottom: 4rem; // handle iOS calculation
+  right: 1rem;
+  left: 1rem;
+  margin-bottom: env(safe-area-inset-bottom);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1000;
+
+  hr {
+    border: none;
+    border-top: calc-rem(1) solid $white;
+  }
+}
+
+.contextual-menus {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  bottom: 7rem;
+  right: 1rem;
+  top: 1rem;
+  left: 1rem;
+  display: none;
+
+  &.open {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__container {
+    background-color: $blue;
+    color: $white;
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-regular;
+    box-shadow: 0 0 calc-rem(12) 0 rgba(0,0,0,0.20);
+    border-radius: calc-rem(8);
+    margin-bottom: calc-rem(5);
+    padding-top: calc-rem(22);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-height: 100%;
+
+    &__title {
+      font-weight: $ff-roboto-black;
+      font-size: calc-rem(18);
+      padding-left: calc-rem(21);
+      padding-right: calc-rem(10);
+    }
+  }
+}
+
+
+.rotate-open {
+  -webkit-animation:spin-open .15s linear forwards;
+  -moz-animation:spin-open .15s linear forwards;
+  animation:spin-open .15s linear forwards;
+}
+@-moz-keyframes spin-open {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(45deg); }
+}
+@-webkit-keyframes spin-open {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(45deg); }
+}
+@keyframes spin-open {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(45deg);}
+}
+
+.rotate-close {
+  -webkit-animation:spin-close .15s linear forwards;
+  -moz-animation:spin-close .15s linear forwards;
+  animation:spin-close .15s linear forwards;
+}
+@-moz-keyframes spin-close {
+  from { -moz-transform: rotate(45deg); }
+  to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spin-close {
+  from { -webkit-transform: rotate(45deg); }
+  to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spin-close {
+  from {transform:rotate(45deg);}
+  to {transform:rotate(0deg);}
+}

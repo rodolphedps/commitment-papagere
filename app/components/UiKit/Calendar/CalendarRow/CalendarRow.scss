@@ -1,0 +1,28 @@
+@import '../../../../styles/font-family.scss';
+@import '../../../../styles/functions.scss';
+@import '../../../../styles/colors.scss';
+
+.calendar-row {
+  display: flex;
+  margin-bottom: calc-rem(10);
+
+  &__date-container {
+    font-family: $ff-roboto;
+    font-size: calc-rem(18);
+    font-weight: $ff-roboto-regular;
+    text-transform: uppercase;
+    padding-top: calc-rem(10);
+
+    &__letters-date {
+      font-size: calc-rem(12);
+      width: calc-rem(30);
+    }
+  }
+
+  &__child-container {
+    flex: 1;
+    padding-left: calc-rem(10);
+    display: flex;
+    flex-direction: column;
+  }
+}

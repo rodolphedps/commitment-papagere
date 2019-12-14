@@ -1,0 +1,14 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.network-guard {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  padding: calc-rem(10);
+}

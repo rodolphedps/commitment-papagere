@@ -1,0 +1,19 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+
+.labelled-input {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $ff-roboto;
+  font-weight: $ff-roboto-regular;
+  font-size: calc-rem(14);
+
+  &__label {
+    margin-right: calc-rem(12);
+    white-space: nowrap;
+  }
+}

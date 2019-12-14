@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/font-family.scss";
+@import "../../../styles/functions.scss";
+
+.text-area {
+  textarea {
+    border: none;
+    outline: none;
+    color: $black;
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-regular;
+    font-size: calc-rem(10);
+    width: 100%;
+
+    &::placeholder {
+      color: $grey3;
+    }
+  }
+}

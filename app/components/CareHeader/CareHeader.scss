@@ -1,0 +1,32 @@
+@import 'styles/colors.scss';
+@import 'styles/font-family.scss';
+@import 'styles/functions.scss';
+
+.care-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: $ff-roboto;
+  color: $white;
+
+  user-select: none;
+
+  &__left-container,
+  &__right-container {
+    margin-top: calc-rem(22);
+    margin-bottom: calc-rem(6);
+  }
+
+  &__left-container {
+    cursor: pointer;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    font-weight: $ff-roboto-regular;
+    font-size: calc-rem(16);
+  }
+
+  &__right-container {
+    justify-content: flex-end;
+  }
+}

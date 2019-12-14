@@ -1,0 +1,46 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/font-family.scss';
+@import '../../../styles/functions.scss';
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue;
+  border-radius: calc-rem(100);
+  height: calc-rem(36);
+  font-family: $ff-roboto;
+  font-weight: $ff-roboto-regular;
+  font-size: calc-rem(14);
+  color: $white;
+  padding: 0 calc-rem(10);
+
+  &:active {
+    opacity: .7;
+  }
+
+  &--disabled {
+    -webkit-filter: grayscale(1) opacity(0.5);
+    filter: grayscale(1) opacity(0.5);
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: calc-rem(16);
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon + &__text {
+    margin-left: calc-rem(10);
+  }
+}

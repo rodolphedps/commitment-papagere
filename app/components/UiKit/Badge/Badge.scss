@@ -1,0 +1,18 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+
+.badge {
+  background:$blue;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: $ff-roboto-medium;
+  font-size: calc-rem(10);
+  padding: 0 calc-rem(10);
+  min-height: calc-rem(19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc-rem(2.5);
+}

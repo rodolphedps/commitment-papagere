@@ -1,0 +1,35 @@
+@import '../../../../styles/functions.scss';
+
+$arrowRadius: 25;
+$arrowRadiusRem: calc-rem($arrowRadius);
+
+.install-modal {
+  display: flex;
+  align-items: center;
+
+  &__icon-add {
+    width: calc-rem(50);
+    height: calc-rem(50);
+    margin-right: calc-rem(10);
+  }
+
+  &__icon-share {
+    height: calc-rem(20);
+    margin-left: calc-rem(5);
+    margin-right: calc-rem(5);
+    margin-bottom: calc-rem(6);
+  }
+
+  &::after {
+    border-top: $arrowRadiusRem solid white;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: calc-rem(-$arrowRadius + 1);
+    left: calc(50% - #{$arrowRadiusRem});
+    border-left: $arrowRadiusRem solid transparent;
+    border-right: $arrowRadiusRem solid transparent;
+  }
+}

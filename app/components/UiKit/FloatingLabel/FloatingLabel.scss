@@ -1,0 +1,115 @@
+@import '../../../styles/font-family';
+@import '../../../styles/functions';
+@import '../../../styles/colors';
+
+/* Powered by: https://github.com/tonystar/float-label-css
+ */
+
+/* Re-usable mixins
+ * https://github.com/tonystar/float-label-css/blob/master/scss/_mixins.scss
+ */
+ @mixin float-label-container {
+  display: block;
+  position: relative;
+  font-family: $ff-roboto;
+  font-weight: $ff-roboto-regular;
+}
+
+@mixin float-label {
+  label, > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    transition: all .2s;
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-regular;
+    @content;
+  }
+}
+
+@mixin float-label-input {
+  &::placeholder {
+    opacity: 1;
+    transition: all .2s;
+  }
+  &:placeholder-shown:not(:focus)::placeholder {
+      opacity: 0;
+  }
+}
+
+@mixin float-label-scaled {
+  &:placeholder-shown:not(:focus) + * {
+      font-size: 90%;
+      opacity: .5;
+      @content;
+  }
+}
+
+/* Default styling
+ * https://github.com/tonystar/float-label-css/blob/master/scss/float-label.scss
+ */
+.has-float-label {
+  @include float-label-container;
+
+  @include float-label;
+
+  select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  input, select {
+    @include float-label-input;
+    font-size: calc-rem(13);
+    padding-top: 1rem;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0,0,0,.5);
+    transition: border-color .2s ease-in-out;
+
+    @include float-label-scaled {
+      top: 0.75em;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba(150, 159 , 168, 1);
+    }
+  }
+}
+
+// // Custom styling
+.has-float-label {
+  min-height: calc-rem(66);
+  input {
+    padding: 1rem calc-rem(11) calc-rem(3) calc-rem(11);
+    background-color: #515F6F;
+    border-radius: calc-rem(4);
+    color: #E8E9EC !important;
+    width: 100%;
+  }
+
+  label {
+    padding-left: calc-rem(11);
+    color: #ADB4BB;
+  }
+
+  &.valid input {
+    border-color: $green;
+  }
+
+  &.invalid input {
+    border-color: $red;
+  }
+
+  &__error {
+    font-size: calc-rem(12);
+    color: $red;
+    margin-top: calc-rem(2);
+    padding-left: calc-rem(2);
+  }
+}

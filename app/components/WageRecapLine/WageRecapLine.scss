@@ -1,0 +1,29 @@
+@import '../../styles/functions';
+@import '../../styles/colors';
+@import '../../styles/font-family';
+
+.wage-recap-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: calc-rem(41);
+  font-family: $ff-roboto;
+  font-weight: $ff-roboto-regular;
+
+  &__salary {
+    flex-grow: 1;
+    font-weight: $ff-roboto-medium;
+    font-size: calc-rem(18);
+    color: $grey4;
+    text-align: right;
+  }
+
+  &:before {
+    left: 0;
+    width: calc-rem(4);
+    height: 100%;
+    z-index: 1;
+    margin-right: calc-rem(8);
+  }
+}

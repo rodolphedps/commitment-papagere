@@ -1,0 +1,25 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.titled-card {
+  padding-bottom: 7.5rem;
+  padding: 0;
+  margin-bottom: calc-rem(10);
+
+  &__header {
+    padding: calc-rem(14) calc-rem(20) calc-rem(14) calc-rem(20);
+    text-transform: uppercase;
+    font-size: calc-rem(14);
+    font-weight: $ff-roboto-black;
+    border-bottom: calc-rem(1) solid $grey7;
+  }
+
+  &__container {
+    padding: calc-rem(10) 0;
+    font-size: calc-rem(14);
+    display: flex;
+    flex-direction: column;
+  }
+
+}

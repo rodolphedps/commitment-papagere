@@ -1,0 +1,49 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/functions.scss";
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: calc-rem(36);
+  height: calc-rem(20);
+  outline: none;
+  margin: 0px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $grey6;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: calc-rem(30);
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: calc-rem(16);
+  width: calc-rem(16);
+  left: calc-rem(2);
+  bottom: calc-rem(2);
+  background-color: $white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: $green;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px $green;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(calc-rem(16));
+  -ms-transform: translateX(calc-rem(16));
+  transform: translateX(16);
+}

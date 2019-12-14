@@ -1,0 +1,29 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/font-family.scss';
+@import '../../../../styles/functions.scss';
+
+.update-snackbar {
+  width: 100%;
+  padding: calc-rem(10);
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  position: fixed;
+  z-index: 2999999999999;
+  bottom: 0px;
+  font-family: $ff-roboto;
+  font-size: calc-rem(16);
+  font-weight: $ff-roboto-regular;
+
+  &__actions-bar {
+    display: flex;
+    align-items: center;
+
+    &__update-btn {
+      flex-grow: 1;
+      margin-top: calc-rem(10);
+      font-weight: $ff-roboto-bold;
+      color: $blue;
+    }
+  }
+}

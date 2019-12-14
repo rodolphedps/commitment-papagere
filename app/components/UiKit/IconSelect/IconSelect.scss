@@ -1,0 +1,30 @@
+@import '../../../styles/functions';
+
+$checkedBackgroundColor: #50E3C2;
+$uncheckedBackgroundColor: #F4F4F4;
+$iconColor: #516173;
+
+.icon-select {
+  width: calc-rem(36);
+  height: calc-rem(36);
+  background-color: $uncheckedBackgroundColor;
+  border: calc-rem(1) solid $uncheckedBackgroundColor;
+  border-radius: 90%;
+  box-shadow: 0 calc-rem(6) calc-rem(8) calc-rem(-4) rgba(0,0,0,0.20);
+  color: $iconColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s ease-in-out box-shadow, .2s ease-in-out background-color, .2s ease-in-out opacity;
+
+  &__icon-container {
+    font-size: calc-rem(20);
+  }
+
+  &--checked, &:active:not(&--readonly) {
+    background-color: $checkedBackgroundColor;
+    border: none;
+    box-shadow: none;
+  }
+}

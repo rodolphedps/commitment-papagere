@@ -1,0 +1,50 @@
+@import './common';
+
+.user-theme-bg-0:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-45deg, #1488CC 0%, #2B32B2 100%);
+}
+
+.user-theme-bg-1:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-45deg, #0086A8 0%, #00CFFF 100%);
+}
+
+.user-theme-bg-2:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-45deg, #007991 0%, #78FFD6 100%);
+}
+
+.user-theme-bg-3:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-231deg, #00EBDA 0%, #5E74ED 93%);
+}
+
+.user-theme-bg-4:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-45deg, #3D58F8 0%, #BF2EBB 100%);
+}
+
+.user-theme-bg-5:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-224deg, #AAFFA8 0%, #5230E2 100%);
+}
+
+.user-theme-bg-6:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-224deg, #FC5C7D 0%, #6482FB 100%);
+}
+
+.user-theme-bg-7:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-224deg, #0080FF 0%, #072491 100%);
+}
+
+.user-theme-bg-8:before {
+  background-image: linear-gradient(-45deg, #AE2323 0%, #C86DD7 100%);
+}
+
+.user-theme-bg-9:before {
+  @extend %base-gradient;
+  background-image: linear-gradient(-45deg, #000428 0%, #004E92 100%);
+}

@@ -1,0 +1,163 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+
+
+.content-card {
+    margin-left: 6%;
+    margin-top: 3%;
+}
+
+.child-vacation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.btn-weeks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.str-week {
+    margin-left: 5%;
+    width: 90px;
+}
+
+.nanny-vacation {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.week-type {
+    margin-top: 5%;
+}
+
+.week-type-info {
+    margin-top: 5%;
+//    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.btn-occur {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.child-str {
+    justify-content: right;
+    margin-right: 15%;
+}
+
+.nanny-str {
+    justify-content: right;
+    margin-right: 13%;
+}
+
+.btn-add-type {
+    margin-top: 3%;
+    margin-left: 24%;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.str-type {
+    margin-left: 3%;
+}
+
+.summary-card {
+    padding-bottom: 3.8%;
+}
+
+.summary-content {
+    margin-left: 6%;
+    margin-top: 3%;
+}
+
+.total-weeks {
+    margin-right: 2.5%;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.calcul-content {
+    margin-top: 5%;
+}
+
+.str-content {
+    text-align: center;
+}
+
+.info-content {
+    margin-top: 5%;
+}
+
+.content-str {
+    text-align: center;
+}
+
+.action-bar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.btn-validate {
+    justify-content: center;
+    display: flex;
+}
+
+.host-weeks {
+    margin-left: 6%;
+}
+
+.complete {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.incomplete {
+    margin-top: 8%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.hour-value-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 9.3%;
+    left: 0;
+    right: 0;
+    color: white;
+    background: rgb(0, 90, 117);
+    box-shadow: 0 0 0.375rem 0 rgba(0,0,0,.2);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    z-index: 2;
+    min-height: 3.125rem;
+}
+
+.str-month {
+    padding-left: 2%;
+}
+
+.month-right {
+    padding-right: 3%;
+}
+
+.arrow-schedule {
+    margin-top: -2%;
+}

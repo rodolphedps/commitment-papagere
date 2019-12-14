@@ -1,0 +1,24 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/font-family.scss';
+@import '../../../styles/functions.scss';
+
+.header {
+  background-color: $white;
+  height: calc-rem(62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 calc-rem(2) calc-rem(8) 0 rgba(0,0,0,0.20);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  &__title {
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-regular;
+    font-size: calc-rem(16);
+    color: $red;
+  }
+}

@@ -1,0 +1,13 @@
+const pagePrefix = 'Login/';
+
+export const LOGIN_REQUEST = `${pagePrefix}LOGIN_REQUEST`;
+export const LOGIN_SUCCESS = `${pagePrefix}LOGIN_SUCCESS`;
+export const LOGIN_ERROR = `${pagePrefix}LOGIN_ERROR`;
+export const CHANGE_EMAIL = `${pagePrefix}CHANGE_EMAIL`;
+export const CHANGE_PASSWORD = `${pagePrefix}CHANGE_PASSWORD`;
+
+export const PASSWORD_FORGOTTEN_REQUEST = `${pagePrefix}PASSWORD_FORGOTTEN_REQUEST`;
+export const PASSWORD_FORGOTTEN_SUCCESS = `${pagePrefix}PASSWORD_FORGOTTEN_SUCCESS`;
+export const PASSWORD_FORGOTTEN_ERROR = `${pagePrefix}PASSWORD_FORGOTTEN_ERROR`;
+export const OPEN_PASSWORD_FORGOTTEN_SUCCESS_MODAL = `${pagePrefix}OPEN_PASSWORD_FORGOTTEN_SUCCESS_MODAL`;
+export const CLOSE_PASSWORD_FORGOTTEN_SUCCESS_MODAL = `${pagePrefix}CLOSE_PASSWORD_FORGOTTEN_SUCCESS_MODAL`;

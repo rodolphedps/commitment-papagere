@@ -1,0 +1,115 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.hourly-rate-page {
+    padding-top: calc-rem(75);
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.input-style {
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    margin-left: 10%;
+    color: black;
+}
+
+.hr-form {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.rate-gross {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.euro-str {
+    margin-left: 15%;
+}
+
+.gross {
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.convert-btn {
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+.gross-value {
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.gross-style {
+    border: 1px solid black;
+    width: 140px;
+    text-align: center;
+    margin-left: 3%;
+    color: black;
+}
+
+.infos-part {
+    margin-top: 10%;
+    margin-right: 3%;
+    margin-left: 1%;
+}
+
+.title-infos {
+    margin-top: 2%;
+}
+
+.content-infos {
+    margin-top: 5%;
+}
+
+.btn-validate {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.min-hr {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.min {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.conv-gross {
+    margin-left: 5%;
+}
+
+.line {
+    width: 90%;
+    height: 30px;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.info-hr {
+    margin-left: 5%;
+}
+
+.conv-gross {
+    margin-left: 15%;
+    margin-top: -1%;
+    font-size: 20px;
+}

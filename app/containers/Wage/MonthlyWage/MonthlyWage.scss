@@ -1,0 +1,58 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/font-family.scss';
+@import '../../../styles/functions.scss';
+
+.monthly-wage {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-bold;
+    font-size: calc-rem(14);
+    color: $black;
+    margin-bottom: calc-rem(20);
+
+    &__month-name {
+      text-transform: capitalize;
+    }
+
+    &__filer {
+      flex-grow: 1;
+    }
+
+    &__title {
+      width: 100%;
+      font-size: calc-rem(16);
+      font-weight: $ff-roboto-bold;
+      color: $black;
+      text-transform: capitalize;
+      background: $black;
+      height: 1px;
+      margin-top: calc-rem(10);
+      margin-bottom: calc-rem(18);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > div {
+        position: relative;
+        padding: calc-rem(10);
+        background: $white2;
+      }
+
+      &__text {
+        left: 0.5rem;
+      }
+
+      &__total {
+        right: 0.25rem;
+        font-size: calc-rem(18);
+      }
+    }
+  }
+
+  .wage-recap-line + .wage-recap-line {
+    margin-top: calc-rem(10);
+  }
+}

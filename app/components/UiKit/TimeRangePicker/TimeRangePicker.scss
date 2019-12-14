@@ -1,0 +1,45 @@
+@import '../../../styles/colors';
+@import '../../../styles/font-family';
+@import '../../../styles/functions';
+
+.time-range-picker {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  &__disabled {
+    opacity: .45;
+  }
+
+  &__label {
+    color: $grey3;
+    font-family: $ff-roboto;
+    font-size: calc-rem(12);
+    font-weight: $ff-roboto-regular;
+    margin-right: calc-rem(2);
+  }
+
+  &__picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-light;
+    font-size: calc-rem(12);
+    color: $grey5;
+
+    &__invalid-label {
+      text-align: center;
+      color: darken($grey5, 25%);
+    }
+  }
+
+  &__action-container {
+    width: calc-rem(36);
+    margin-left: calc-rem(12);
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+  }
+}

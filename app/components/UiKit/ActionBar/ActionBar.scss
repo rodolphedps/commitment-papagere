@@ -1,0 +1,16 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.action-bar {
+  height: calc-rem(60);
+  background: transparentize(#000000, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__action {
+    display: flex;
+    justify-content: center;
+  }
+}

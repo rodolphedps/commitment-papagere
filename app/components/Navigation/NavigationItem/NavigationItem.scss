@@ -1,0 +1,44 @@
+@import "../../../styles/colors";
+@import "../../../styles/font-family";
+@import "../../../styles/functions";
+
+.navigation-item {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    color: $grey;
+    transition: .2s ease-in-out color;
+    font-family: $ff_roboto;
+    font-size: calc-rem(12);
+    // padding: 0 0 calc-rem(5) 0;
+  }
+
+  .icon {
+    color: $grey;
+    font-size: calc-rem(20);
+    // font-size: calc-rem(30);
+    transition: .2s ease-in-out color;
+  }
+
+  &--selected {
+    .icon, .navigation-item__label {
+      color: $blue;
+    }
+  }
+}

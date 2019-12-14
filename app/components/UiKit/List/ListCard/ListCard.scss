@@ -1,0 +1,63 @@
+@import '../../../../styles/font-family.scss';
+@import '../../../../styles/functions.scss';
+@import '../../../../styles/colors.scss';
+
+.list-card {
+  background: #FFFFFF;
+  box-shadow: 0 0 calc-rem(8) 0 rgba(0,0,0,0.10), 0 calc-rem(12) calc-rem(12) calc-rem(-8) rgba(0,0,0,0.20);
+  border-radius: calc-rem(4);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  color: $black;
+
+  & > * {
+    z-index: 1;
+  }
+
+  &.full-gradient {
+    background: inherit;
+    color: $white;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      border-bottom-left-radius: calc-rem(4); // ios hack because the pseudo element doesn't care about parent overflow property
+      border-top-left-radius: calc-rem(4);
+    }
+  }
+
+  &.standard {
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc-rem(3);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      border-bottom-left-radius: calc-rem(4); // ios hack because the pseudo element doesn't care about parent overflow property
+      border-top-left-radius: calc-rem(4);
+    }
+  }
+
+  &.detached-gradient {
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc-rem(3);
+      top: calc-rem(10);
+      bottom: calc-rem(10);
+      left: calc-rem(6);
+      z-index: 1;
+    }
+  }
+
+}

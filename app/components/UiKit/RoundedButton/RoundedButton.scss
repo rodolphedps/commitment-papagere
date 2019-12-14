@@ -1,0 +1,21 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/functions.scss";
+
+.rounded-button {
+  background-color: $blue;
+  border-radius: 90%;
+  width: calc-rem(48);
+  height: calc-rem(48);
+  font-size: calc-rem(24);
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 calc-rem(6) calc-rem(8) calc-rem(-4) rgba(0,0,0,0.20);
+  transition: .2s ease-in-out box-shadow, .2s ease-in-out opacity;
+
+  &:active {
+    opacity: .8;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font-family.scss';
+@import '../../styles/functions.scss';
+
+.placeholder-tab {
+    text-align: center;
+    color: $black;
+    padding: calc-rem(15);
+    padding-top: calc-rem(72);
+
+    & > * {
+        font-family: $ff-roboto;
+    }
+
+    h1 {
+        font-size: calc-rem(22);
+        font-weight: $ff-roboto-black;
+    }
+
+    P {
+        font-size: calc-rem(14);
+    }
+}

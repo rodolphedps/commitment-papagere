@@ -1,0 +1,87 @@
+@import '../../styles/functions';
+@import '../../styles/font-family';
+@import '../../styles/colors';
+
+.datepicker-header-container {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  position: fixed !important;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+
+  &__header {
+    font-family: $ff-roboto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    height: calc-rem(62);
+
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20);
+
+    .date {
+      color: $red;
+      font-size: calc-rem(18);
+      font-weight: $ff-roboto-regular;
+      text-transform: capitalize;
+    }
+
+    .left-container {
+      flex: 1;
+      display: flex;
+      // padding: calc-rem(25) 0 calc-rem(11) calc-rem(16);
+      cursor: pointer;
+      justify-content: flex-start;
+      align-items: baseline;
+      padding-left: calc-rem(15);
+    }
+
+    .right-container {
+      display: flex;
+      padding-right: calc-rem(15);
+      width: calc-rem(83);
+      justify-content: flex-end;
+    }
+
+    .overlay {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 3rem;
+      top: 3.7rem;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .Cal__MonthList__root {
+      overflow-x: hidden !important;
+    }
+
+    .Cal__Today__root .Cal__Today__chevron {
+      right: calc-rem(16);
+    }
+
+    .Cal__Today__chevron path {
+      fill: #fff;
+    }
+
+    .Cal__Container__root {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .picker-arrow {
+      color: $red;
+      display: flex;
+      justify-content: center;
+      margin-left: calc-rem(10);
+    }
+  }
+}
+

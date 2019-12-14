@@ -1,0 +1,29 @@
+@import '../../../styles/functions';
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0 0 calc-rem(6) 0 rgba(0,0,0,0.20);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  z-index: 2;
+  min-height: calc-rem(50);
+
+  &.dark {
+    background-color: #474747;
+
+    .navigation-item__label, .icon {
+      color: white;
+    }
+
+    .navigation-item--selected {
+      .navigation-item__label, .icon {
+        color: #76c0f7;
+      }
+    }
+  }
+}

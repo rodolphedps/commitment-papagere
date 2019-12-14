@@ -1,0 +1,52 @@
+@import '../../../styles/functions';
+@import '../../../styles/font-family';
+@import '../../../styles/colors';
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.10), 0 12px 12px -8px rgba(0,0,0,0.20);
+  border-radius: calc-rem(4);
+  color: $black;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    padding: calc-rem(15);
+    border-top-left-radius: calc-rem(4);
+    border-top-right-radius: calc-rem(4);
+  }
+
+  &-title {
+    font-family: $ff-roboto;
+    font-size: calc-rem(10);
+    font-weight: $ff-roboto-medium;
+    text-transform: uppercase;
+    margin-left: calc-rem(11);
+  }
+
+  &-subtitle {
+    font-family: $ff-roboto;
+    font-size: calc-rem(10);
+    font-weight: $ff-roboto-medium;
+    margin-left: calc-rem(3);
+    color: $grey3;
+  }
+
+  &-body {
+    font-family: $ff-roboto;
+    font-size: calc-rem(12);
+    font-weight: $ff-roboto-regular;
+    padding: calc-rem(0) calc-rem(15) calc-rem(15) calc-rem(15);
+  }
+
+  &.one-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .card-body {
+      margin-top: 0;
+      margin-left: calc-rem(11);
+    }
+  }
+}

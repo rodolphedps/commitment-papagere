@@ -1,0 +1,33 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.person-info {
+  min-height: calc-rem(31);
+  width: 100%;
+  display: flex;
+
+  .icon-ctn {
+    width: calc-rem(38);
+    display: flex;
+    justify-content: center;
+    font-size: calc-rem(16);
+    color: $blue;
+  }
+
+  .label-ctn {
+    padding: calc-rem(4) 0;
+    flex-grow: 2;
+    font-size: calc-rem(12);
+    color: $grey4;
+  }
+
+  .value-ctn {
+    width: 60%;
+    font-size: calc-rem(12);
+    padding: calc-rem(4) 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: calc-rem(5);
+  }
+}

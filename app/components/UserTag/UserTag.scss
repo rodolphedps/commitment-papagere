@@ -1,0 +1,71 @@
+
+@import '../../styles/colors.scss';
+@import '../../styles/functions.scss';
+@import '../../styles/font-family.scss';
+
+.user-tag {
+  display: flex;
+
+  &--horizontal {
+    align-items: center;
+    justify-content: space-between;
+    height: calc-rem(32);
+  }
+
+  &--vertical {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .user-tag__avatar img {
+      margin-left: 0;
+    }
+  }
+
+  &__name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &--vertical {
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-regular;
+    font-size: calc-rem(12);
+    color: $black;
+  }
+
+  &__secondary-name {
+    font-family: $ff-roboto;
+    font-weight: $ff-roboto-regular;
+    font-size: calc-rem(9);
+    color: $grey3;
+    &--horizontal {
+      margin-left: 3px;
+    }
+  }
+
+  &__avatar img {
+    max-width: calc-rem(32);
+    max-height: calc-rem(32);
+    border-radius: calc-rem(32);
+
+    &.right {
+      margin-left: calc-rem(8);
+    }
+
+    &.left {
+      margin-right: calc-rem(8);
+    }
+
+    &.disabled {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
+  }
+}

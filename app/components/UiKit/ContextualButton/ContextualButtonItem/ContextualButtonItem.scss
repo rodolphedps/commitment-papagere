@@ -1,0 +1,40 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/font-family.scss';
+@import '../../../../styles/functions.scss';
+
+.contextual-button-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc-rem(56);
+  margin-left: calc-rem(21);
+  margin-right: calc-rem(10);
+  color: $white;
+  font-family: $ff-roboto;
+  font-weight: $ff-roboto-regular;
+
+  &__image-container {
+    &__image {
+      height: calc-rem(32);
+      width: calc-rem(32);
+    }
+  }
+
+  &__label {
+    margin-left: calc-rem(18);
+    margin-right: calc-rem(19);
+    font-size: calc-rem(14);
+    flex-grow: 1;
+  }
+
+  &--disabled {
+    color: $grey5;
+    font-style: italic;
+
+    img {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
+  }
+}

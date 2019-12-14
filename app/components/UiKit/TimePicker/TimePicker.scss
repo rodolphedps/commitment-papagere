@@ -1,0 +1,38 @@
+@import '../../../styles/colors';
+@import '../../../styles/font-family';
+@import '../../../styles/functions';
+
+.rmc-picker-item {
+  color: $black;
+  font-size: calc-rem(20);
+}
+
+.time-picker {
+  border: none;
+  font-family: $ff-roboto;
+  font-weight: $ff-roboto-light;
+  font-size: calc-rem(26);
+  color: $black;
+  border-bottom: calc-rem(1) solid $grey4;
+  width: auto;
+  overflow: hidden;
+  text-align: center;
+  text-align-last: center;
+  padding: 0 calc-rem(5);
+  border-radius: 0;
+  transition: background-color .2s ease-in-out, border-bottom .2s ease-in-out, color .2s ease-in-out;
+
+  &__invalidated {
+    background-color: $red1-opacity10;
+    color: $red1;
+    font-weight: $ff-roboto-bold;
+    border-bottom: calc-rem(1) solid $red1;
+  }
+
+  &__disabled {
+    opacity: .45;
+  }
+
+  &__readonly {
+  }
+}

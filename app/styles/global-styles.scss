@@ -1,0 +1,104 @@
+@import "~bootstrap/scss/bootstrap-reboot.scss";
+@import "~bootstrap/scss/bootstrap-grid.scss";
+@import "./papagere-icons.css";
+@import "./colors";
+
+html {
+  @media (max-width: 768px) {
+    font-size: calc(15px + 0.4vw);
+  }
+
+  @media (min-width: 768px ) and (max-width: 1000px) and (orientation: portrait) {
+    font-size: calc(18px + .5vw);
+  }
+
+  @media (min-width: 1000px) and (orientation: portrait) {
+    font-size: calc(22px + .8vw);
+  }
+
+  @media (min-width: 1000px) and (orientation: landscape) {
+    font-size: calc(22px + .4vw);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: -44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F9F9F9;
+    transition: .3s background-color ease-in-out;
+    z-index: -1;
+  }
+
+  &.blank-background::before {
+    background-color: #F9F9F9;
+    background-image: none;
+  }
+
+  &.dark-gray-background::before {
+    background-image: linear-gradient(-180deg, #516173 3%, #3B4857 98%);
+  }
+
+  &.clock-in-background::before {
+    background-image: linear-gradient(225deg, #F093FB 0%, #F5576C 100%);
+  }
+}
+
+body.fontLoaded {
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#app {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+p,
+label {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5em;
+}
+
+.layout {
+  padding-top: 5rem;
+}
+
+.button-fixed-bottom {
+  position: fixed;
+  bottom: 4rem; // handle iOS calculation
+  right: 1rem;
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+// calc padding for iOS X Layout
+.rmc-picker-popup.fortest {
+  padding-bottom: env(safe-area-inset-bottom); // handle iOS calculation
+}
+
+.unauth-layout {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

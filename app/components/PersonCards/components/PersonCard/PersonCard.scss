@@ -1,0 +1,49 @@
+@import 'styles/colors';
+@import 'styles/font-family';
+@import 'styles/functions';
+
+.person-card {
+  padding: calc-rem(10);
+
+  &__header {
+    height: calc-rem(190);
+    display: flex;
+    .left, .right {
+      width: calc-rem(40);
+    }
+    .middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 2;
+
+      .person-avatar {
+        width: calc-rem(80);
+        height: calc-rem(80);
+        border-radius: calc-rem(80);
+        margin: calc-rem(10) 0;
+      }
+
+      .person-name {
+        font-size: calc-rem(18);
+      }
+
+      .person-kind {
+        font-size: calc-rem(12);
+        color: $grey2;
+      }
+    }
+  }
+
+  &__body {
+    .person-info-group {
+      margin-bottom: calc-rem(17);
+      width: 100%;
+    }
+    .person-address {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+}

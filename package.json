@@ -62,7 +62,7 @@
     "localforage": "^1.7.2",
     "lodash": "^4.17.10",
     "memoize-one": "^4.0.2",
-    "minimist": "1.2.0",
+    "minimist": "1.2.6",
     "prop-types": "15.6.1",
     "query-string": "^6.2.0",
     "react": "^16.4.0",
